@@ -17,7 +17,7 @@ This repository showcases the implementation of a 2-layer neural network without
 - Pure NumPy implementation (no deep learning frameworks)
 - Complete backpropagation algorithm from scratch
 - Training and evaluation on full MNIST dataset (60,000 training + 10,000 test samples)
-- Visualization of learned hidden layer features
+- Visualization of learned hidden layer features and full network flow
 
 ## Technologies Used
 - **NumPy**: Core numerical computations
