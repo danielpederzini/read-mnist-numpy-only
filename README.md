@@ -2,22 +2,29 @@
 A deep learning project implementing a neural network **from scratch using only NumPy** to classify hand-written digits from the MNIST dataset. This project demonstrates core machine learning concepts including forward propagation, backpropagation, and gradient descent.
 
 ## Project Overview
-This repository showcases the implementation of a 2-layer neural network without relying on high-level frameworks like TensorFlow or PyTorch. The network successfully learns to recognize hand-written digits with competitive accuracy.
+This repository showcases the implementation of a 3-layer neural network without relying on high-level frameworks like TensorFlow or PyTorch. The network successfully learns to recognize hand-written digits with competitive accuracy.
 
 ## Architecture
 - **Input Layer**: 784 neurons (28×28 pixel images flattened)
-- **Hidden Layer**: 128 neurons with ReLU activation
+- **Hidden Layer 1**: 64 neurons with ReLU activation
+- **Hidden Layer 2**: 64 neurons with ReLU activation
 - **Output Layer**: 10 neurons with Softmax activation (one per digit class 0-9)
 
-**Forward Pass**: Input → Linear → ReLU → Linear → Softmax → Output
+**Forward Pass**: Input → Linear → ReLU → Linear → ReLU → Linear → Softmax → Output
+
+**Weight Initialization**: He initialization (scaled by √(2/fan_in)) for ReLU layers and Xavier initialization for output layer
 
 **Loss Function**: Cross-entropy loss with categorical targets
 
 ## Key Features
 - Pure NumPy implementation (no deep learning frameworks)
 - Complete backpropagation algorithm from scratch
+- Proper weight initialization using He/Xavier methods for stable training
 - Training and evaluation on full MNIST dataset (60,000 training + 10,000 test samples)
-- Visualization of learned hidden layer features and full network flow
+- Comprehensive visualizations:
+  - Learned features from both hidden layers side-by-side
+  - Activation maps from all layers for sample predictions
+  - Output probability distributions with prediction indicators
 
 ## Technologies Used
 - **NumPy**: Core numerical computations
