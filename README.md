@@ -43,7 +43,8 @@ The model learns meaningful representations:
 - Test accuracy improves with training
 - Hidden layer weights visualize interpretable digit features (shown in the final visualizations)
 
-<img width="1402" height="696" alt="image" src="https://github.com/user-attachments/assets/26fdb252-472c-4173-92bd-5f4f60ed4bea" />
+<img width="1585" height="789" alt="weights" src="https://github.com/user-attachments/assets/6a639950-b2e6-43e0-b631-195af614f54b" />
+<img width="1389" height="3189" alt="predictions" src="https://github.com/user-attachments/assets/8052dfa5-09fb-40c5-8c0c-ce68e86a3fa2" />
 
 ## How to Run
 
